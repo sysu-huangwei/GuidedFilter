@@ -251,12 +251,13 @@ void main()
 ```
 
 ### 绘制结果：
-![正则化参数eps=0.02](https://img-blog.csdnimg.cn/9e7e3742eb7f4bd4992c3d151c633f3f.png)正则化参数eps=0.02
-![正则化参数eps=0.02](https://img-blog.csdnimg.cn/19668d645833415592faedbdfdae18fe.png)
+![正则化参数eps=0.02](https://img-blog.csdnimg.cn/9e7e3742eb7f4bd4992c3d151c633f3f.png)<br>
+正则化参数eps=0.02
+![正则化参数eps=0.02](https://img-blog.csdnimg.cn/19668d645833415592faedbdfdae18fe.png)<br>
 正则化参数eps=0.02
 
 #### 动态效果展示
 * 1.固定模糊程度（0.5），修改正则化参数eps（变化范围 0~0.1）
-![请添加图片描述](https://img-blog.csdnimg.cn/97e0446172dd4c68a33b094e651b4f1e.gif)
+![请添加图片描述](https://img-blog.csdnimg.cn/97e0446172dd4c68a33b094e651b4f1e.gif)<br>
 * 2.固定正则化参数eps（0.05），修改模糊程度0~1
-![请添加图片描述](https://img-blog.csdnimg.cn/4fa0d1a96d8d4c1ea7f8378b645a7794.gif)
+![请添加图片描述](https://img-blog.csdnimg.cn/4fa0d1a96d8d4c1ea7f8378b645a7794.gif)<br>
