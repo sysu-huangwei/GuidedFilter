@@ -1,0 +1,12 @@
+[
+    {
+        "id": "begin",
+        "nextIDs": ["guided"]
+    },
+    {
+        "id": "guided",
+        "filterDesc": {
+            "type": "GuidedFilter"
+        }
+    }
+]

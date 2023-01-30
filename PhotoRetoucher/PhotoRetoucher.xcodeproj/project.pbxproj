@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7152F7932739980E008F01BB /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7152F7912739980E008F01BB /* EditViewController.m */; };
+		7152F7942739980E008F01BB /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7152F7922739980E008F01BB /* EditViewController.xib */; };
+		ECA0D8EC7754CD7E15014542 /* libPods-PhotoRetoucher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 172D7AE4548BDD4F183A5270 /* libPods-PhotoRetoucher.a */; };
+		FC29F5952743D07C003F6696 /* GPUImageEffectFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC29F5942743D07C003F6696 /* GPUImageEffectFilter.mm */; };
+		FCCA1F472739515400D5CFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F462739515400D5CFCA /* AppDelegate.m */; };
+		FCCA1F4D2739515400D5CFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F4C2739515400D5CFCA /* ViewController.m */; };
+		FCCA1F502739515400D5CFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCA1F4E2739515400D5CFCA /* Main.storyboard */; };
+		FCCA1F522739515600D5CFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCA1F512739515600D5CFCA /* Assets.xcassets */; };
+		FCCA1F552739515600D5CFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCA1F532739515600D5CFCA /* LaunchScreen.storyboard */; };
+		FCCA1F582739515600D5CFCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F572739515600D5CFCA /* main.m */; };
+		FCD94B5427FEC92800B79149 /* GuidedSubFilter2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94AF527FEC92800B79149 /* GuidedSubFilter2.cpp */; };
+		FCD94B5727FEC92800B79149 /* GuidedSubFilter1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94AF827FEC92800B79149 /* GuidedSubFilter1.cpp */; };
+		FCD94B5D27FEC92800B79149 /* GuidedFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B0627FEC92800B79149 /* GuidedFilter.cpp */; };
+		FCD94B6827FEC92800B79149 /* FilterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B2327FEC92800B79149 /* FilterFactory.cpp */; };
+		FCD94B6927FEC92800B79149 /* FilterChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B2827FEC92800B79149 /* FilterChain.cpp */; };
+		FCD94B6A27FEC92800B79149 /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B2B27FEC92800B79149 /* BaseFilter.cpp */; };
+		FCD94B6B27FEC92800B79149 /* FilterNodeDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B2D27FEC92800B79149 /* FilterNodeDescription.cpp */; };
+		FCD94B6C27FEC92800B79149 /* FilterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B2E27FEC92800B79149 /* FilterNode.cpp */; };
+		FCD94B7027FEC92800B79149 /* EffectEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B3327FEC92800B79149 /* EffectEngine.cpp */; };
+		FCD94B7127FEC92800B79149 /* BaseLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B3727FEC92800B79149 /* BaseLog.cpp */; };
+		FCD94B7227FEC92800B79149 /* EffectConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B3B27FEC92800B79149 /* EffectConfigParser.cpp */; };
+		FCD94B7327FEC92800B79149 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B3D27FEC92800B79149 /* cJSON.c */; };
+		FCD94B7627FEC92800B79149 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4427FEC92800B79149 /* Program.cpp */; };
+		FCD94B7727FEC92800B79149 /* FrameBufferPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4527FEC92800B79149 /* FrameBufferPool.cpp */; };
+		FCD94B7827FEC92800B79149 /* ProgramPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4627FEC92800B79149 /* ProgramPool.cpp */; };
+		FCD94B7927FEC92800B79149 /* FileUtilsForIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4A27FEC92800B79149 /* FileUtilsForIOS.mm */; };
+		FCD94B7A27FEC92800B79149 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4B27FEC92800B79149 /* FrameBuffer.cpp */; };
+		FCD94B7B27FEC92800B79149 /* BaseGLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD94B4E27FEC92800B79149 /* BaseGLUtils.cpp */; };
+		FCD94B7D27FED1DE00B79149 /* ImageEffect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCD94B7C27FED1DE00B79149 /* ImageEffect.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		172D7AE4548BDD4F183A5270 /* libPods-PhotoRetoucher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoRetoucher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6BD7210566C53161E42B22 /* Pods-PhotoRetoucher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRetoucher.release.xcconfig"; path = "Target Support Files/Pods-PhotoRetoucher/Pods-PhotoRetoucher.release.xcconfig"; sourceTree = "<group>"; };
+		650443BD9F503650D62AD0D7 /* Pods-PhotoRetoucher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRetoucher.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRetoucher/Pods-PhotoRetoucher.debug.xcconfig"; sourceTree = "<group>"; };
+		7152F7902739980E008F01BB /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		7152F7912739980E008F01BB /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		7152F7922739980E008F01BB /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		FC29F5932743D07C003F6696 /* GPUImageEffectFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageEffectFilter.h; sourceTree = "<group>"; };
+		FC29F5942743D07C003F6696 /* GPUImageEffectFilter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GPUImageEffectFilter.mm; sourceTree = "<group>"; };
+		FCCA1F422739515400D5CFCA /* PhotoRetoucher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRetoucher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCA1F452739515400D5CFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCCA1F462739515400D5CFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCCA1F4B2739515400D5CFCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FCCA1F4C2739515400D5CFCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCCA1F4F2739515400D5CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCCA1F512739515600D5CFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCCA1F542739515600D5CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCCA1F562739515600D5CFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCA1F572739515600D5CFCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCD94AF527FEC92800B79149 /* GuidedSubFilter2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuidedSubFilter2.cpp; sourceTree = "<group>"; };
+		FCD94AF827FEC92800B79149 /* GuidedSubFilter1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuidedSubFilter1.cpp; sourceTree = "<group>"; };
+		FCD94B0627FEC92800B79149 /* GuidedFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuidedFilter.cpp; sourceTree = "<group>"; };
+		FCD94B1127FEC92800B79149 /* GuidedFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuidedFilter.hpp; sourceTree = "<group>"; };
+		FCD94B1727FEC92800B79149 /* GuidedSubFilter2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuidedSubFilter2.hpp; sourceTree = "<group>"; };
+		FCD94B1C27FEC92800B79149 /* GuidedSubFilter1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuidedSubFilter1.hpp; sourceTree = "<group>"; };
+		FCD94B2227FEC92800B79149 /* FilterFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterFactory.hpp; sourceTree = "<group>"; };
+		FCD94B2327FEC92800B79149 /* FilterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterFactory.cpp; sourceTree = "<group>"; };
+		FCD94B2527FEC92800B79149 /* FilterNodeDescription.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterNodeDescription.hpp; sourceTree = "<group>"; };
+		FCD94B2627FEC92800B79149 /* FilterNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterNode.hpp; sourceTree = "<group>"; };
+		FCD94B2727FEC92800B79149 /* BaseFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseFilter.hpp; sourceTree = "<group>"; };
+		FCD94B2827FEC92800B79149 /* FilterChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterChain.cpp; sourceTree = "<group>"; };
+		FCD94B2927FEC92800B79149 /* FilterConstant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterConstant.hpp; sourceTree = "<group>"; };
+		FCD94B2A27FEC92800B79149 /* FilterDescription.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterDescription.hpp; sourceTree = "<group>"; };
+		FCD94B2B27FEC92800B79149 /* BaseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseFilter.cpp; sourceTree = "<group>"; };
+		FCD94B2C27FEC92800B79149 /* FilterChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterChain.hpp; sourceTree = "<group>"; };
+		FCD94B2D27FEC92800B79149 /* FilterNodeDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterNodeDescription.cpp; sourceTree = "<group>"; };
+		FCD94B2E27FEC92800B79149 /* FilterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterNode.cpp; sourceTree = "<group>"; };
+		FCD94B3327FEC92800B79149 /* EffectEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectEngine.cpp; sourceTree = "<group>"; };
+		FCD94B3427FEC92800B79149 /* EffectEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectEngine.hpp; sourceTree = "<group>"; };
+		FCD94B3627FEC92800B79149 /* BasePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePlatform.h; sourceTree = "<group>"; };
+		FCD94B3727FEC92800B79149 /* BaseLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLog.cpp; sourceTree = "<group>"; };
+		FCD94B3827FEC92800B79149 /* BaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLog.h; sourceTree = "<group>"; };
+		FCD94B3927FEC92800B79149 /* BaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
+		FCD94B3B27FEC92800B79149 /* EffectConfigParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectConfigParser.cpp; sourceTree = "<group>"; };
+		FCD94B3C27FEC92800B79149 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		FCD94B3D27FEC92800B79149 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		FCD94B3E27FEC92800B79149 /* EffectConfigParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectConfigParser.hpp; sourceTree = "<group>"; };
+		FCD94B4427FEC92800B79149 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
+		FCD94B4527FEC92800B79149 /* FrameBufferPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBufferPool.cpp; sourceTree = "<group>"; };
+		FCD94B4627FEC92800B79149 /* ProgramPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramPool.cpp; sourceTree = "<group>"; };
+		FCD94B4927FEC92800B79149 /* FileUtilsForIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtilsForIOS.h; sourceTree = "<group>"; };
+		FCD94B4A27FEC92800B79149 /* FileUtilsForIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileUtilsForIOS.mm; sourceTree = "<group>"; };
+		FCD94B4B27FEC92800B79149 /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffer.cpp; sourceTree = "<group>"; };
+		FCD94B4D27FEC92800B79149 /* BaseGLUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseGLUtils.hpp; sourceTree = "<group>"; };
+		FCD94B4E27FEC92800B79149 /* BaseGLUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGLUtils.cpp; sourceTree = "<group>"; };
+		FCD94B4F27FEC92800B79149 /* FrameBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FrameBuffer.hpp; sourceTree = "<group>"; };
+		FCD94B5027FEC92800B79149 /* Program.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Program.hpp; sourceTree = "<group>"; };
+		FCD94B5127FEC92800B79149 /* FrameBufferPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FrameBufferPool.hpp; sourceTree = "<group>"; };
+		FCD94B5227FEC92800B79149 /* ProgramPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgramPool.hpp; sourceTree = "<group>"; };
+		FCD94B7C27FED1DE00B79149 /* ImageEffect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageEffect.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCA1F3F2739515400D5CFCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA0D8EC7754CD7E15014542 /* libPods-PhotoRetoucher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		138B54FBF9BA8DC57C0BAA88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				650443BD9F503650D62AD0D7 /* Pods-PhotoRetoucher.debug.xcconfig */,
+				2E6BD7210566C53161E42B22 /* Pods-PhotoRetoucher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2829274C1F88B8AB1D0E00A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				172D7AE4548BDD4F183A5270 /* libPods-PhotoRetoucher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCCA1F392739515400D5CFCA = {
+			isa = PBXGroup;
+			children = (
+				FCD94B7C27FED1DE00B79149 /* ImageEffect.bundle */,
+				FCD94AF227FEC92800B79149 /* ImageEffect */,
+				FCCA1F442739515400D5CFCA /* PhotoRetoucher */,
+				FCCA1F432739515400D5CFCA /* Products */,
+				138B54FBF9BA8DC57C0BAA88 /* Pods */,
+				2829274C1F88B8AB1D0E00A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCA1F432739515400D5CFCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F422739515400D5CFCA /* PhotoRetoucher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCA1F442739515400D5CFCA /* PhotoRetoucher */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F452739515400D5CFCA /* AppDelegate.h */,
+				FCCA1F462739515400D5CFCA /* AppDelegate.m */,
+				FCCA1F4B2739515400D5CFCA /* ViewController.h */,
+				FCCA1F4C2739515400D5CFCA /* ViewController.m */,
+				FCCA1F4E2739515400D5CFCA /* Main.storyboard */,
+				7152F7902739980E008F01BB /* EditViewController.h */,
+				7152F7912739980E008F01BB /* EditViewController.m */,
+				7152F7922739980E008F01BB /* EditViewController.xib */,
+				FC29F5932743D07C003F6696 /* GPUImageEffectFilter.h */,
+				FC29F5942743D07C003F6696 /* GPUImageEffectFilter.mm */,
+				FCCA1F512739515600D5CFCA /* Assets.xcassets */,
+				FCCA1F532739515600D5CFCA /* LaunchScreen.storyboard */,
+				FCCA1F562739515600D5CFCA /* Info.plist */,
+				FCCA1F572739515600D5CFCA /* main.m */,
+			);
+			path = PhotoRetoucher;
+			sourceTree = "<group>";
+		};
+		FCD94AF227FEC92800B79149 /* ImageEffect */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94AF327FEC92800B79149 /* Filters */,
+				FCD94B3227FEC92800B79149 /* Interface */,
+				FCD94B3527FEC92800B79149 /* Define */,
+				FCD94B3A27FEC92800B79149 /* Parse */,
+				FCD94B4327FEC92800B79149 /* OpenGLBase */,
+			);
+			name = ImageEffect;
+			path = PhotoRetoucher/ImageEffect;
+			sourceTree = "<group>";
+		};
+		FCD94AF327FEC92800B79149 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B1C27FEC92800B79149 /* GuidedSubFilter1.hpp */,
+				FCD94AF827FEC92800B79149 /* GuidedSubFilter1.cpp */,
+				FCD94B1727FEC92800B79149 /* GuidedSubFilter2.hpp */,
+				FCD94AF527FEC92800B79149 /* GuidedSubFilter2.cpp */,
+				FCD94B1127FEC92800B79149 /* GuidedFilter.hpp */,
+				FCD94B0627FEC92800B79149 /* GuidedFilter.cpp */,
+				FCD94B2127FEC92800B79149 /* factory */,
+				FCD94B2427FEC92800B79149 /* base */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		FCD94B2127FEC92800B79149 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B2227FEC92800B79149 /* FilterFactory.hpp */,
+				FCD94B2327FEC92800B79149 /* FilterFactory.cpp */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
+		FCD94B2427FEC92800B79149 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B2927FEC92800B79149 /* FilterConstant.hpp */,
+				FCD94B2727FEC92800B79149 /* BaseFilter.hpp */,
+				FCD94B2B27FEC92800B79149 /* BaseFilter.cpp */,
+				FCD94B2C27FEC92800B79149 /* FilterChain.hpp */,
+				FCD94B2827FEC92800B79149 /* FilterChain.cpp */,
+				FCD94B2627FEC92800B79149 /* FilterNode.hpp */,
+				FCD94B2E27FEC92800B79149 /* FilterNode.cpp */,
+				FCD94B2A27FEC92800B79149 /* FilterDescription.hpp */,
+				FCD94B2527FEC92800B79149 /* FilterNodeDescription.hpp */,
+				FCD94B2D27FEC92800B79149 /* FilterNodeDescription.cpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		FCD94B3227FEC92800B79149 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B3427FEC92800B79149 /* EffectEngine.hpp */,
+				FCD94B3327FEC92800B79149 /* EffectEngine.cpp */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FCD94B3527FEC92800B79149 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B3927FEC92800B79149 /* BaseDefine.h */,
+				FCD94B3827FEC92800B79149 /* BaseLog.h */,
+				FCD94B3727FEC92800B79149 /* BaseLog.cpp */,
+				FCD94B3627FEC92800B79149 /* BasePlatform.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		FCD94B3A27FEC92800B79149 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B3C27FEC92800B79149 /* cJSON.h */,
+				FCD94B3D27FEC92800B79149 /* cJSON.c */,
+				FCD94B3E27FEC92800B79149 /* EffectConfigParser.hpp */,
+				FCD94B3B27FEC92800B79149 /* EffectConfigParser.cpp */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		FCD94B4327FEC92800B79149 /* OpenGLBase */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B5027FEC92800B79149 /* Program.hpp */,
+				FCD94B4427FEC92800B79149 /* Program.cpp */,
+				FCD94B5227FEC92800B79149 /* ProgramPool.hpp */,
+				FCD94B4627FEC92800B79149 /* ProgramPool.cpp */,
+				FCD94B4F27FEC92800B79149 /* FrameBuffer.hpp */,
+				FCD94B4B27FEC92800B79149 /* FrameBuffer.cpp */,
+				FCD94B5127FEC92800B79149 /* FrameBufferPool.hpp */,
+				FCD94B4527FEC92800B79149 /* FrameBufferPool.cpp */,
+				FCD94B4727FEC92800B79149 /* Platform */,
+				FCD94B4C27FEC92800B79149 /* Utils */,
+			);
+			path = OpenGLBase;
+			sourceTree = "<group>";
+		};
+		FCD94B4727FEC92800B79149 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B4827FEC92800B79149 /* iOS */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		FCD94B4827FEC92800B79149 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B4927FEC92800B79149 /* FileUtilsForIOS.h */,
+				FCD94B4A27FEC92800B79149 /* FileUtilsForIOS.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FCD94B4C27FEC92800B79149 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94B4D27FEC92800B79149 /* BaseGLUtils.hpp */,
+				FCD94B4E27FEC92800B79149 /* BaseGLUtils.cpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCCA1F412739515400D5CFCA /* PhotoRetoucher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCA1F5B2739515600D5CFCA /* Build configuration list for PBXNativeTarget "PhotoRetoucher" */;
+			buildPhases = (
+				0D7A1440C33575BE2F67A68E /* [CP] Check Pods Manifest.lock */,
+				FCCA1F3E2739515400D5CFCA /* Sources */,
+				FCCA1F3F2739515400D5CFCA /* Frameworks */,
+				FCCA1F402739515400D5CFCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoRetoucher;
+			productName = PhotoRetoucher;
+			productReference = FCCA1F422739515400D5CFCA /* PhotoRetoucher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCA1F3A2739515400D5CFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FCCA1F412739515400D5CFCA = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = FCCA1F3D2739515400D5CFCA /* Build configuration list for PBXProject "PhotoRetoucher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCA1F392739515400D5CFCA;
+			productRefGroup = FCCA1F432739515400D5CFCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCA1F412739515400D5CFCA /* PhotoRetoucher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCA1F402739515400D5CFCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7152F7942739980E008F01BB /* EditViewController.xib in Resources */,
+				FCCA1F552739515600D5CFCA /* LaunchScreen.storyboard in Resources */,
+				FCCA1F522739515600D5CFCA /* Assets.xcassets in Resources */,
+				FCCA1F502739515400D5CFCA /* Main.storyboard in Resources */,
+				FCD94B7D27FED1DE00B79149 /* ImageEffect.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D7A1440C33575BE2F67A68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoRetoucher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCA1F3E2739515400D5CFCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD94B7B27FEC92800B79149 /* BaseGLUtils.cpp in Sources */,
+				FCCA1F4D2739515400D5CFCA /* ViewController.m in Sources */,
+				FCD94B7727FEC92800B79149 /* FrameBufferPool.cpp in Sources */,
+				FCD94B7027FEC92800B79149 /* EffectEngine.cpp in Sources */,
+				FCD94B7127FEC92800B79149 /* BaseLog.cpp in Sources */,
+				FCD94B6B27FEC92800B79149 /* FilterNodeDescription.cpp in Sources */,
+				FCD94B6A27FEC92800B79149 /* BaseFilter.cpp in Sources */,
+				FCD94B7327FEC92800B79149 /* cJSON.c in Sources */,
+				FCD94B7827FEC92800B79149 /* ProgramPool.cpp in Sources */,
+				FC29F5952743D07C003F6696 /* GPUImageEffectFilter.mm in Sources */,
+				FCD94B7627FEC92800B79149 /* Program.cpp in Sources */,
+				FCD94B6927FEC92800B79149 /* FilterChain.cpp in Sources */,
+				FCD94B5427FEC92800B79149 /* GuidedSubFilter2.cpp in Sources */,
+				FCCA1F472739515400D5CFCA /* AppDelegate.m in Sources */,
+				FCD94B5D27FEC92800B79149 /* GuidedFilter.cpp in Sources */,
+				FCD94B7227FEC92800B79149 /* EffectConfigParser.cpp in Sources */,
+				FCD94B6827FEC92800B79149 /* FilterFactory.cpp in Sources */,
+				FCCA1F582739515600D5CFCA /* main.m in Sources */,
+				FCD94B5727FEC92800B79149 /* GuidedSubFilter1.cpp in Sources */,
+				FCD94B7A27FEC92800B79149 /* FrameBuffer.cpp in Sources */,
+				FCD94B7927FEC92800B79149 /* FileUtilsForIOS.mm in Sources */,
+				7152F7932739980E008F01BB /* EditViewController.m in Sources */,
+				FCD94B6C27FEC92800B79149 /* FilterNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCCA1F4E2739515400D5CFCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCA1F4F2739515400D5CFCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCCA1F532739515600D5CFCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCA1F542739515600D5CFCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCCA1F592739515600D5CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCCA1F5A2739515600D5CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCCA1F5C2739515600D5CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650443BD9F503650D62AD0D7 /* Pods-PhotoRetoucher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WR652HR2XM;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Interface\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Filters/base\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/OpenGLBase\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Define\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+				);
+				INFOPLIST_FILE = PhotoRetoucher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayyyhuang.PhotoRetoucher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCCA1F5D2739515600D5CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6BD7210566C53161E42B22 /* Pods-PhotoRetoucher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WR652HR2XM;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Interface\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Filters/base\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/OpenGLBase\"",
+					"\"$(SRCROOT)/../3rdparty/ImageEffect-OpenGL/ImageEffect/Define\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+				);
+				INFOPLIST_FILE = PhotoRetoucher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayyyhuang.PhotoRetoucher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCA1F3D2739515400D5CFCA /* Build configuration list for PBXProject "PhotoRetoucher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCA1F592739515600D5CFCA /* Debug */,
+				FCCA1F5A2739515600D5CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCA1F5B2739515600D5CFCA /* Build configuration list for PBXNativeTarget "PhotoRetoucher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCA1F5C2739515600D5CFCA /* Debug */,
+				FCCA1F5D2739515600D5CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCA1F3A2739515400D5CFCA /* Project object */;
+}
